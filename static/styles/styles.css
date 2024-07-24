@@ -1,0 +1,20 @@
+/* Styling for Pokemon API */
+
+@font-face {
+    font-family: 'poke-text';
+    src: url('../fonts/pokemon_classic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'poke-title';
+    src: url('../fonts/ketchum.otf') format('opentype');
+}
+
+body {
+    text-align: center;
+    font-family: 'poke-text';
+}
+
+body h1 {
+    font-family: 'poke-title';
+}
