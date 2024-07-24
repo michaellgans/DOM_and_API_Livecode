@@ -16,13 +16,43 @@ $(document).ready(function() {
         });
     }
 
+    // function getType1(typeInput) {
+    //     $.ajax({
+    //         url: `https://pokeapi.co/api/v2/type/${typeInput}`,
+    //         method: "GET",
+    //         dataType: "json",
+    //         success: function(data) {
+    //             const pokemonList = data.pokemon.map(p => p.pokemon.name);
+    //             displayResults(pokemonList);
+    //         },
+    //         error: function() {
+    //             console.log("Get Pokemon Error");
+    //         }
+    //     });
+    // }
+
+    // function getType2(typeInput) {
+    //     $.ajax({
+    //         url: `https://pokeapi.co/api/v2/type/${typeInput}`,
+    //         method: "GET",
+    //         dataType: "json",
+    //         success: function(data) {
+    //             const pokemonList = data.pokemon.map(p => p.pokemon.name);
+    //             displayResults(pokemonList);
+    //         },
+    //         error: function() {
+    //             console.log("Get Pokemon Error");
+    //         }
+    //     });
+    // }
+
     function displayResults(pokemonList) {
         const resultsDiv = $(".results");
         resultsDiv.empty();
         if (pokemonList.length > 0) {
             pokemonList.forEach(pokemon => {
                 const pokemonCard = `
-                <div>
+                <div class="my-2">
                     ${pokemon}
                 </div>
                 `;

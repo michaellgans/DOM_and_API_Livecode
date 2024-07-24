@@ -17,6 +17,7 @@ body {
 
 body h1 {
     font-family: 'poke-title';
+    font-size: 80px;
 }
 
 .pokeball-icon {
