@@ -18,3 +18,8 @@ body {
 body h1 {
     font-family: 'poke-title';
 }
+
+.pokeball-icon {
+    width: 100px;
+    border-radius: 50px;
+}
