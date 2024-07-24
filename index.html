@@ -6,7 +6,32 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Type Em All</title>
 
+        <!-- Bootstrap -->
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <link
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+            integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+            crossorigin="anonymous"
+        ></script>
+
+        <!-- Scripts -->
         <script src="scripts/script.js"></script>
+
         <!-- Style Sheet -->
         <link rel="stylesheet" type="text/css" href="static/styles/styles.css">
     </head>
@@ -15,9 +40,34 @@
             <img alt="pokeball">
         </header>
         <h1>Type Em All!</h1>
-        <div class="search">
+        <!-- <div class="search">
+            <span class="drop-down-title">KEYWORDS</span>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text"></span>
+              </div>
+              <input 
+                type="text" 
+                class="form-control search-text-area" 
+                aria-label="Default" 
+                aria-describedby="inputGroup-sizing-default" 
+                placeholder="Search by Pokemon"
+                >
+            </div>
+        </div> -->
 
-        </div>
+        <form class="form-inline d-flex justify-content-center">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                    </svg>
+                </span>
+              </div>
+              <input type="text" class="form-control" placeholder="Search by Pokemon Type" aria-label="Search by Pokemon Type" aria-describedby="basic-addon1">
+            </div>
+        </form>
         <div class="results">
 
         </div>
