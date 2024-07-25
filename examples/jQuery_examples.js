@@ -29,6 +29,13 @@ $(document).ready(function() {
     $("id").html("Hello World!");
     // Other function calls can also go inside here
     // So everything runs only once the document is ready.
+
+
+
+
+
+
+    
 });
 // JavaScript
 document.addEventListener("DOMContentLoaded", function() {
